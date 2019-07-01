@@ -90,7 +90,134 @@
         else
             alert('There is not match digit');*/
         // 14.
-        
+     /*   let year=parseInt(prompt('Enter a year'));
+        if(year%4==0||(year%4==0&&year%100!=0))
+            alert('This year is leap');
+        else
+            alert('This year is`nt leap');*/
+        // 15.
+    /*    let num=parseInt(prompt('Enter a five-digit number'));
+        let res=0;
+        let buf=num;
+        for(let i=0;i<5;i++)
+        {
+            res+=buf%10;
+            if(i<4)
+                res*=10;
+            buf=parseInt(buf/10);
+        }
+        if(num==res)
+            alert('This number is palindrome');
+        else
+            alert(('This number is`nt palindrome'));*/
+        // 16.
+     /*   let dollar=parseInt(prompt('Enter quantity dollars'));
+        let currency=prompt("Enter type of currency (EUR, UAH or AZN");
+        switch (currency){
+            case 'EUR':{alert(dollar/1.15) }break;
+            case 'UAH':{alert(`${dollar*26}`)}break;
+            case 'AZN':{alert(dollar*5.5)}break;
+            default:break;
+        }*/
+        // 17.
+        /*let sum=parseInt(prompt('Enter purchase amount'));
+        if(sum>=200&&sum<=300)
+            alert(`You have to pay ${sum-sum*0.03}`);
+        else if(sum>300&&sum<=500)
+            alert(`You have to pay ${sum-sum*0.05}`);
+        else  if(sum>500)
+            alert(`You have to pay ${sum-sum*0.07}`);
+        else
+            alert(`You have to pay ${sum}`);*/
+        // 18.
+       /* let circle=parseInt(prompt('Enter a circumference'));
+        let side=parseInt(prompt('Enter a side of squre'));
+        if((circle/Math.PI)<=side)
+            alert('This circle can be inscribed in square');
+        else
+            alert('This circle can not be inscribed in square');*/
+        // 19.
+        /*let score=0;
+        if(!confirm('is the square sun?'))
+            score++;
+        if(confirm('is the water wet?'))
+            score++;
+        if(!confirm('11*11=122'))
+            score++;
+        alert(`You are have ${score} scores`);*/
+        // 20.
+/*        let year=parseInt(prompt('Enter a year'));
+        let month=parseInt((prompt('Enter a month')));
+        let  day=parseInt(prompt('Enter a day'));
+        let new_day=day+1;
+        function main()
+        {
+            if(day<0||month>12||month<0||year<0)
+            {
+                alert('Not correct entered date');
+                return;
+            }
+            else if((month==1||month==3||month==5||month==7||month==8||month==10||month==12)&&day>31)
+            {
+                alert('Not correct entered date');
+                return;
+            }
+            else if((month==4||month==6||month==9||month==11)&&day>30)
+            {
+                alert('Not correct entered date');
+                return;
+            }
+            else if(month==2&&new_day>28)
+            {
+                if((year%400==0||(year%4==0&&year%10!=0)))
+                {
+                    if(day>29)
+                    {
+                        alert('Not correct entered date');
+                        return;
+                    }
+                }
+                else
+                {
+                    alert('Not correct entered date');
+                    return;
+                }
+            }
+            if((month==1||month==3||month==5||month==7||month==8||month==10)&&new_day>31)
+            {
+                new_day=1;
+                month++;
+            }
+            else if(month==12&&new_day>31)
+            {
+                new_day=1;
+                month=1;
+                year++;
+            }
+            else if((month==4||month==6||month==9||month==11)&&new_day>30)
+            {
+                new_day=1;
+                month++;
+            }
+            else if(month==2&&new_day>28)
+            {
+                if((year%400==0||(year%4==0&&year%10!=0)))
+                {
+                    if(new_day>29)
+                    {
+                        new_day=1;
+                        month++;
+                    }
+                }
+                else
+                {
+                    new_day=1;
+                    month++;
+                }
+            }
+            alert(`New date is ${new_day}/${month}/${year}`);
+        }
+        main();*/
     </script>
 </body>
 </html>
